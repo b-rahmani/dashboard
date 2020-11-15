@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="js/persian-calender/persian-datepicker.css" />
+  </head>
+  <body>
+    <div class="fix-menu">
+      <div class="fix-menu__toggle"><span></span></div>
+      <div class="fix-menu__logo">
+        <a href="#" class="navbar-brand">
+          <img src="img/logo.png" alt="" />
+        </a>
+      </div>
+      <span class="fix-menu__panel-tittle h5">پنل مدیریت</span>
+
+      <ul class="mr-auto d-flex nav-buttons">
+        <li class="nav-link show-alerts">
+          <a href="#" class="nav-item text-dark"
+            ><i class="mdi mdi-bell-outline"></i
+            ><span class="badge badge-danger badge-abs">10</span></a
+          >
+          <ul class="alert-massage alerts">
+            <li>
+              <a href="#"
+                ><span>سفارش جدید</span
+                ><span class="badge badge-primary">7</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span>پیام جدید</span
+                ><span class="badge badge-primary">12</span></a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-link show-alerts">
+          <a href="#" class="nav-item text-dark"
+            ><i class="mdi mdi-comment-text-multiple-outline"></i
+            ><span class="badge badge-danger badge-abs">11</span>
+          </a>
+          <div class="alert-massage comments">
+            <h3 class="mr-3">پیام های دریافتی</h3>
+            <h2>
+              <i class="mdi mdi-message-outline ml-3"></i
+              ><span>شما هیچ پیامی ندارید</span>
+            </h2>
+            <ul>
+              <li class="active">
+                <a href="#">
+                  <h4>آروین فاخری</h4>
+                  <span><i class="mdi mdi-clock-outline"></i>98/12/10 </span>
+                  <p>ممنون بخاطر اصالت کالایی که فرستادید</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <h4>بهنام رحمانی</h4>
+                  <span><i class="mdi mdi-clock-outline"></i>98/10/10 </span>
+                  <p>خوب بود</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <h4>آروین فاخری</h4>
+                  <span><i class="mdi mdi-clock-outline"></i>98/12/10 </span>
+                  <p>ممنون بخاطر اصالت کالایی که فرستادید</p>
+                </a>
+              </li>
+            </ul>
+            <a href="#"
+              >دیدن همه ی پیام ها <i class="mdi mdi-chevron-left"></i
+            ></a>
+          </div>
+        </li>
+
+        <li class="nav-link show-alerts">
+          <a href="#" role="button" class="nav-item text-dark"
+            ><i class="mdi mdi-login-variant"></i>
+          </a>
+
+          <ul class="exit alert-massage">
+            <li class="exit__list">
+              <i class="mdi mdi-lock-open-outline"></i> قفل صفحه
+            </li>
+            <li class="exit__list">
+              <i class="mdi mdi-cog-outline"></i> تنظیمات
+            </li>
+            <li class="exit__list">
+              <a href="#exampleModalCenter" data-toggle="modal">
+                <i class="mdi mdi-logout-variant align-middle"></i> خروج
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-end mt-5r main">
+      <ul class="right-nav">
+        <li>
+          <a href="#" class="">
+            <i class="mdi mdi-information-outline"></i>
+            <span>اطلاعات فروش</span></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="mdi mdi-shopping-outline"></i> <span>سفارش ها </span>
+            <span
+              class="badge badge-danger"
+              style="margin-right: auto; margin-left: 0.5rem"
+              >20</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="mdi mdi-shape-outline"></i> <span>دسته بندی ها</span></a
+          >
+        </li>
+        <li>
+          <a
+            class="dropdown-toggle"
+            href="#product-lists"
+            data-toggle="collapse"
+            aria-expanded="false"
+          >
+            <i class="mdi mdi-playlist-edit"></i> <span>لیست محصولات</span>
+          </a>
+          <ul class="menu-collapse collapse" id="product-lists">
+            <li><a href="#">لیست محصولات </a></li>
+            <li><a href="#">لیست محصولات بدون عکس</a></li>
+            <li><a href="#">تنظیمات محصولات</a></li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="#permosen-lists"
+            class="dropdown-toggle"
+            data-toggle="collapse"
+            aria-expanded="false"
+          >
+            <i class="mdi mdi-pencil-box-multiple-outline"></i>
+            <span>پروموشن محصولات</span></a
+          >
+          <ul class="menu-collapse collapse" id="permosen-lists">
+            <li><a href="#">پرفروش ترین ها </a></li>
+            <li><a href="#">تخفیف دار ترین ها </a></li>
+            <li><a href="#">جدیدترین ها </a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="mdi mdi-map-clock-outline"></i>
+            <span>زمان و هزینه ی ارسال</span></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="mdi mdi-tag-outline"></i> <span>کد تخفیف</span></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="mdi mdi-email-send-outline"></i>
+            <span>ارسال پیامک</span></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="mdi mdi-play-circle-outline"></i>
+            <span>چند رسانه ای</span></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="mdi mdi-account-details-outline"></i>
+            <span>لیست کاربران</span></a
+          >
+        </li>
+        <li>
+          <a href="/dashboard-delivery-list.html" class="active">
+            <i class="mdi mdi-moped"></i> <span>پیک ها </span></a
+          >
+        </li>
+        <li>
+          <a
+            href="#comments"
+            class="dropdown-toggle special"
+            aria-expanded="false"
+            data-toggle="collapse"
+          >
+            <i class="mdi mdi-comment-text-multiple"></i> <span>نظرها</span
+            ><span
+              class="badge badge-danger"
+              style="margin-right: auto; margin-left: 0.5rem"
+              >95</span
+            ></a
+          >
+          <ul class="menu-collapse collapse" id="comments">
+            <li>
+              <a href="/dashboard-comment-contact.html"
+                ><p>ارتباط با ما</p>
+                <span class="badge badge-danger">15</span></a
+              >
+            </li>
+            <li>
+              <a href="/dashboard-comment-users.html">
+                پیام های کاربران<span class="badge badge-danger">95</span></a
+              >
+            </li>
+            <li>
+              <a href="/dashboard-comment-product.html"> نظرات<span class="badge badge-danger">104</span> </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="mdi mdi-cog-outline"></i> <span>تنظیمات</span></a
+          >
+        </li>
+      </ul>
+
+      <div class="left__side">
+        <div class="backdrop"></div>
+        <div class="main-content">
+          <div class="delivery-edit">
+            <div class="delivery-edit__header">
+              <h3>
+                <i class="mdi mdi-account-edit ml-3 align-middle"></i>ویرایش پیک
+              </h3>
+              <a href="/dashboard-delivery-list.html" class="btn btn-default"
+                >بازگشت <i class="mdi mdi-arrow-left mr-2"></i
+              ></a>
+            </div>
+            <div class="user-data">
+              <div class="row">
+                <!--        name-->
+                <div class="col-lg-4 col-md-12">
+                  <label for="name">نام</label>
+                  <input type="text" id="name" class="user-data-input" />
+                </div>
+                <!--        last name-->
+                <div class="col-lg-4 col-md-12">
+                  <label for="last-name">نام خانوادگی</label>
+                  <input type="text" id="last-name" class="user-data-input" />
+                </div>
+                <!--        code-->
+                <div class="col-lg-4 col-md-12">
+                  <label for="code">کد</label>
+                  <input type="text" id="code" class="user-data-input" />
+                </div>
+                <!--        phone number-->
+                <div class="col-lg-4 col-md-12">
+                  <label for="number">شماره همراه</label>
+                  <input type="tel" id="number" class="user-data-input" />
+                </div>
+                <!--        delivery method-->
+                <div class="col-lg-4 col-md-12">
+                  <label for="method">وسیله نقلیه </label>
+                  <select
+                    name="delivery-method"
+                    id="method"
+                    class="user-data-select"
+                  >
+                    <option value="0" disabled selected>انتخاب کنید</option>
+                    <option value="1">موتور</option>
+                    <option value="2">هواپیما</option>
+                    <option value="3">ماشین</option>
+                  </select>
+                </div>
+                <!--        status-->
+                <div class="col-lg-4 col-md-12">
+                  <label for="status">وضعیت پیک</label>
+                  <select name="status" id="status" class="user-data-select">
+                    <option value="0" selected>فعال</option>
+                    <option value="1">غیر فعال</option>
+                  </select>
+                </div>
+                <!--address-->
+                <div class="col-lg-12 md-12">
+                  <label for="address">آدرس</label>
+                  <input type="text" id="address" class="user-data-input" />
+                </div>
+              </div>
+            </div>
+            <div class="page-button">
+              <button type="submit" class="btn btn-accept">
+                <i class="mdi mdi-check"></i>ثبت تغییرات
+              </button>
+              <button type="button" class="btn btn-danger">
+                <i class="mdi mdi-close"></i>انصراف
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">-->
+      <!--        Launch demo modal-->
+      <!--    </button> -->
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="modal-title" id="exampleModalLongTitle">خروج</h5>
+          </div>
+          <div class="modal-body">از پنل مدیریت خارج می شوید ؟</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              <i class="mdi mdi-check ml-3"></i>بله
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-dismiss="modal"
+            >
+              <i class="mdi mdi-close ml-3"></i>خیر
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js, popper.js, and jquery -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js//bootstrap.bundle.min.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/persian-calender/persian-date.min.js"></script>
+    <script src="js/persian-calender/persian-datepicker.min.js"></script>
+    <script src="js/persian-calender/persian-datepicker-inital.js"></script>
+  </body>
+</html>
